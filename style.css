@@ -1,0 +1,30 @@
+:root{--bg:#f6f7f9;--ink:#1f2933;--muted:#5f6b7a;--navy:#1d3557;--navy-2:#2b4a73;--soft:#eaf0f7;--card:#fff;--line:#e2e6ec;--gold:#b8955a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+h1,h2,.brand{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.top{background:var(--navy);padding:16px 32px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;justify-content:space-between}
+.brand{color:#fff;text-decoration:none;font-size:1.4rem;line-height:1.2;letter-spacing:.01em}
+.brand span{display:block;font:500 .74rem "Segoe UI",system-ui,sans-serif;color:#c3cfdf;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+nav{display:flex;flex-wrap:wrap;gap:2px}
+nav a{color:#dbe4ef;text-decoration:none;font-size:.86rem;padding:7px 11px;border-bottom:2px solid transparent}
+nav a:hover{color:#fff}
+nav a.on{color:#fff;border-bottom-color:var(--gold)}
+main{flex:1;width:100%;max-width:900px;margin:0 auto;padding:48px 28px 56px}
+.hero{display:flex;gap:40px;align-items:center;margin-bottom:36px;flex-wrap:wrap}
+.photo{width:210px;height:252px;border-radius:6px;overflow:hidden;background:var(--soft);box-shadow:0 6px 24px rgba(29,53,87,.15);position:relative;flex:none}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo span{display:none}
+.photo.empty img{display:none}
+.photo.empty span{display:flex;height:100%;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem}
+.kicker{margin:0;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem}
+h1{font-size:3.1rem;line-height:1.1;margin:.2em 0 .15em;color:var(--navy)}
+.sub{margin:0;color:var(--muted);font-size:1.05rem}
+.pt{font-size:2.3rem;color:var(--navy);margin-top:0;padding-bottom:14px;border-bottom:1px solid var(--line);position:relative}
+.pt::after{content:"";position:absolute;left:0;bottom:-1px;width:64px;height:3px;background:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:4px;padding:24px 28px;margin-bottom:20px}
+.card h2{margin:0 0 10px;color:var(--navy);font-size:1.4rem}
+.card p{margin:0}
+.land{background:var(--soft);border-left-color:var(--gold)}
+.land p{font-style:italic;color:#34404d}
+footer{text-align:center;font-size:.85rem;color:#c3cfdf;padding:20px 24px;background:var(--navy)}
+@media (max-width:640px){h1{font-size:2.3rem}.photo{width:170px;height:204px}.top{padding:14px 18px}main{padding:32px 18px}}
